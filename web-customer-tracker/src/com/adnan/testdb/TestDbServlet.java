@@ -40,7 +40,7 @@ public class TestDbServlet extends HttpServlet {
 		}catch(Exception ex) {
 			System.out.println(ex.getMessage());
 			ex.printStackTrace();
-			throw new ServletException(ex);
+			
 		}
 		
 	}

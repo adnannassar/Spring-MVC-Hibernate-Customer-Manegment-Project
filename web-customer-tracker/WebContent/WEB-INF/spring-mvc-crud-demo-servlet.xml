@@ -15,7 +15,7 @@
 		http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 	<!-- Add support for component scanning -->
-	<context:component-scan base-package="com.adnan.springdemo.controller" />
+	<context:component-scan base-package="com.adnan.springdemo" />
 
 	<!-- Add support for conversion, formatting and validation support -->
 	<mvc:annotation-driven/>
@@ -32,9 +32,12 @@
           destroy-method="close">
         <property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
         <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false&amp;serverTimezone=UTC" />
-        <property name="user" value="springstudent" />
-        <property name="password" value="springstudent" /> 
-
+        <property name="user" value="studentAdmin" />
+        <property name="password" value="2211" /> 
+	
+	
+	
+	
         <!-- these are connection pool properties for C3P0 -->
 		<property name="initialPoolSize" value="5"/>
         <property name="minPoolSize" value="5" />

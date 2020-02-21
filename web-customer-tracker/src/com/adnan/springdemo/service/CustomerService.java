@@ -1,10 +1,10 @@
-package com.adnan.springdemo.dao;
+package com.adnan.springdemo.service;
 
 import java.util.List;
 
 import com.adnan.springdemo.entity.Customer;
 
-public interface CustomerDAO {
+public interface CustomerService {
 	List<Customer> getCustomers();
 
 	void saveCustomer(Customer theCustomer);
